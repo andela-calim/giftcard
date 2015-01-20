@@ -126,6 +126,7 @@ section article, .aCenter{
 	color: #111;
 	box-shadow: 0 0 1em #004000;
 	cursor: pointer;
+	border-radius: 5px;
 }
 .blocky:hover {
 	background-color: #b53389;
