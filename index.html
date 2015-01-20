@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" ng-app="giftCard">
+	<head>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href-"#/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<title>GCA - Home</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="navbar-header">
+	        <a class="navbar-brand" href="/#">Gift Card Application</a>
+	      </div>
+			</nav>
+		</header>
+		<section id="content" ng-view>
+
+		</section> <!--end mainContent -->
+
+		<script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="/bower_components/angular-route/angular-route.min.js"></script>
+		
+		<script type="text/javascript" src="js/ngStorage.js"></script>
+		<script type="text/javascript" src="js/giftcard.js"></script>
+		<script type="text/javascript" src="js/controllers/main.controller.js"></script>
+		<script type="text/javascript" src="js/services/main.service.js"></script>
+		
+		<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

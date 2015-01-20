@@ -1,0 +1,59 @@
+
+<header ng-init="me()">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/#">Gift Card Application</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse" ng-show="tokenStatus">
+        <span><a href="#/createProduct">Create Product</a></span>
+        <span><a href="#/viewUsers">View Users</a></span>
+        <a href="" class="btn btn-default btn-sm navbar-right" id="btn-logout" ng-click="logout()">Logout</a>
+      </div><!--/.navbar-collapse -->
+    </div>
+  </nav>
+</header>
+<section id="profile" ng-init="profile()" style="margin-top: 100px;">
+  <article>
+    <h1>Send a memorable gift to your loved one... the memorable way!</h1>
+  </article>
+  
+  <div class="row">
+    <div class="col-md-4 first-col items" id="apiList">
+      <h2>Available Items</h2>
+      <div ng-repeat="item in items" class="col-xs-12 col-md-10 col-md-offset-1 blocky">
+        <div class="item" ng-click="pushToList(item, wishList)">
+          <div><strong>Name</strong>: {{item.itemName}}</div>
+          <div><strong>Category</strong>: {{item.itemCategory}}</div>
+          <div><strong>Description</strong>: {{item.itemDescription}}</div>
+          <div><strong>Price</strong>: {{item.itemPrice}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 aCenter">
+      <h4>Welcome {{firstName}}</h4>
+      <h4>Happy Wishing!</h4>
+    </div>
+
+    <div class="col-md-4 first-col items" id="yourList">
+      <h2>My Wish List</h2>
+      <div ng-repeat="item in wishList" class="col-xs-12 col-md-10 col-md-offset-1 blocky">
+        <div class="item" ng-click="popFromList(item, wishList)">
+          <div><strong>Name</strong>: {{item.itemName}}</div>
+          <div><strong>Category</strong>: {{item.itemCategory}}</div>
+          <div><strong>Description</strong>: {{item.itemDescription}}</div>
+          <div><strong>Price</strong>: {{item.itemPrice}}</div>
+        </div>
+      </div>
+      <a href="" class="btn btn-default btn-sm aCenter" ng-click="saveWishList()" ng-show="wishList.length">Confirm</a>
+      <p>{{statusReport}}</p>
+    </div>
+  </div>
+</section>

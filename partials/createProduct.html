@@ -1,0 +1,47 @@
+<header>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/#profile">Gift Card Application</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <span><a href="#/createProduct">Create Product</a></span>
+        <span><a href="#/viewUsers">View Users</a></span>
+        <a href="" class="btn btn-default btn-sm navbar-right" id="btn-logout" ng-click="logout()">Logout</a>
+      </div><!--/.navbar-collapse -->
+    </div>
+  </nav>
+</header>
+<section id="registration">
+	<article>
+		<h1>Restricted Area!</h1>
+	</article>
+	
+  <section class="regLog-form">
+    <h2>Add a Product</h2>
+    <form ng-submit="createProduct()" id="createItemForm">
+      <div class="form-group">
+        <input type="text" placeholder="Product Name" class="form-control" id="item-name" name="itemName" ng-model="itemName">
+      </div>
+      <div class="form-group">
+        <textarea type="text-area" placeholder="Product Description" class="form-control" id="item-description" name="itemDescription" ng-model="itemDescription"></textarea>
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Product Category" class="form-control" id="item-category" name="itemCategory" ng-model="itemCategory">
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Product Price (Naira)" class="form-control" id="item-price" name="itemPrice" ng-model="itemPrice">
+      </div>
+      <button type="submit" class="btn btn-success regLog-btn">Create Product</button>
+      <a href="#/profile" class="btn btn-success regLog-btn f-right">Home</a>
+      <p></p>
+      <p>{{statusReport}}</p>
+    </form>
+  </section>
+</section>

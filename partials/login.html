@@ -1,0 +1,34 @@
+
+<header>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/#">Gift Card Application</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<section id="login">
+	<article>
+		<h1>Send a memorable gift to your loved one... the memorable way!</h1>
+	</article>
+	<section id="login-form" class="regLog-form">
+		<h2>Login..</h2>
+    <form ng-submit="signin()" id="loginForm">
+      <div class="form-group" class="emailpass-field">
+        <input type="text" placeholder="Email" class="form-control" name="email" ng-model="email">
+      </div>
+      <div class="form-group" class="emailpass-field">
+        <input type="password" placeholder="Password" class="form-control" name="password" ng-model="password">
+      </div>
+      <button type="submit" class="btn btn-success regLog-btn">Login</button>
+      <a href="#/" class="btn btn-success regLog-btn f-right">Register</a>
+    </form>
+	</section>
+</section>
