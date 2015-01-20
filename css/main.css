@@ -16,7 +16,7 @@ input {
 REGISTRATION AND LOGIN
 ************************/
 .mTitle {
-	font-size: 1em;
+	font-size: 1.5em;
 }
 
 #registration, #login {
@@ -91,6 +91,7 @@ REGISTRATION AND LOGIN
 	border-radius: 5px;
 	height: 2.5em;
 	padding-left: 0.3em;
+	margin: 0 2em;
 }
 
 /************************
