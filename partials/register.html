@@ -23,16 +23,16 @@
 		<h2>Register..</h2>
 		<form ng-submit="signup()" id="registerForm">
       <div class="form-group fl-names">
-        <input type="text" placeholder="First Name" class="form-control" id="first-name" name="firstName" ng-model="firstName">
+        <input type="text" placeholder="First Name" class="form-control" id="first-name" name="firstName" ng-model="firstName" required>
       </div>
       <div class="form-group fl-names">
-        <input type="text" placeholder="Last Name" class="form-control" id="last-name" name="lastName" ng-model="lastName">
+        <input type="text" placeholder="Last Name" class="form-control" id="last-name" name="lastName" ng-model="lastName" required>
       </div>
       <div class="form-group">
-        <input type="text" placeholder="Email Address" class="form-control" id="email" name="email" ng-model="email">
+        <input type="text" placeholder="Email Address" class="form-control" id="email" name="email" ng-model="email" required>
       </div>
       <div class="form-group">
-        <input type="password" placeholder="Password" class="form-control" id="password" name="password" ng-model="password">
+        <input type="password" placeholder="Password" class="form-control" id="password" name="password" ng-model="password" required>
       </div>
       <button type="submit" class="btn btn-success regLog-btn">Register</button>
       <a href="#/login" class="btn btn-success regLog-btn f-right">Login</a>
