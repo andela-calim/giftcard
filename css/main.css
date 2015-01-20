@@ -87,10 +87,10 @@ REGISTRATION AND LOGIN
 
 .searchBar {
 	font-size: 1.3em;
-	min-width: 40px;
-	width: 45%;
+	min-width: 30px;
+	width: 40%;
 	border-radius: 5px;
-	height: 2.2em;
+	height: 2em;
 	padding: 0.1em 0 0.1em 0.3em;
 	margin: 0 2em;
 }
