@@ -79,13 +79,13 @@ REGISTRATION AND LOGIN
 
 .cButtons {
 	background-color: pink;
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: bold;
 	color: peru;
 }
 
 .searchBar {
-	font-size: 0.9em;
+	font-size: 1.3em;
 	min-width: 40px;
 	width: 45%;
 	border-radius: 5px;
