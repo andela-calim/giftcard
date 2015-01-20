@@ -16,7 +16,7 @@ input {
 REGISTRATION AND LOGIN
 ************************/
 .mTitle {
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 #registration, #login {
@@ -85,8 +85,9 @@ REGISTRATION AND LOGIN
 }
 
 .searchBar {
+	font-size: 0.9em;
 	min-width: 40px;
-	width: 35%;
+	width: 45%;
 	border-radius: 5px;
 	height: 1.4em;
 	padding: 0.3em;
