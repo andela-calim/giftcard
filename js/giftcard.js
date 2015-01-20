@@ -2,7 +2,7 @@
 angular.module('giftCard', ['ngStorage', 'ngRoute'])
 .config(['$routeProvider','$httpProvider', '$locationProvider', function($routeProvider, $httpProvider, $locationProvider) {
 
-	// $locationProvider.html5Mode(true);
+	// $locationProvider.html5Mode(false);
 
 	$httpProvider.interceptors.push(['$q', '$location', '$localStorage', function($q, $location, $localStorage) {
     return {

@@ -102,6 +102,11 @@ section article, .aCenter{
 	margin-right: 3.5em;
 }
 
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
 .first-col, .third-col {
 	border-radius: 5px;
 	background-color: #48004a;
