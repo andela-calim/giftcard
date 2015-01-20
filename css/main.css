@@ -85,6 +85,7 @@ REGISTRATION AND LOGIN
 }
 
 .searchBar {
+	display: inline-block;
 	min-width: 40px;
 	width: 35%;
 	border-radius: 5px;
