@@ -1,0 +1,120 @@
+
+body {
+	background-color: #349490;
+	color: #222;
+}
+
+input {
+	font-size: 2em;
+}
+
+.navbar-inverse {
+	background-color: #48004a;
+}
+
+/************************
+REGISTRATION AND LOGIN
+************************/
+
+#registration, #login {
+	margin: 7em 7em 0;
+}
+
+.regLog-form {
+	border: 2px solid #48004a;
+	-webkit-box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	height: auto;
+	width: 33em;
+	border-radius: 15px;
+	margin: 3em auto;
+	padding: 1em 1em;
+	background-color: #48004a;
+	color: #ccc;
+}
+
+#login-form {
+	height: 17em;
+}
+
+.fl-names {
+	display: inline-block;
+	width: 49.536%;
+}
+
+.emailpass-field {
+	width: 70%;
+	margin: 0.5em auto;
+}
+
+.regLog-btn {
+	width: 45%;
+	margin: 0.8em 0 0;
+	font-size: 1.3em;
+}
+
+#navbar {
+	margin: 1em 0;
+}
+
+#btn-logout {
+	background-color: #9d0004;
+	color: #fff;
+}
+
+.f-left {
+	float: left;
+}
+.c-both {
+	clear:both;
+}
+
+.f-right {
+	float: right;
+}
+
+/************************
+PROFILE PAGE (Items)
+************************/
+section article, .aCenter{
+	text-align: center;
+	margin: 3em auto 0;
+}
+
+#userArticle {
+	margin-top: 7em;
+}
+
+.items {
+	-webkit-box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	height: auto;
+	border-radius: 15px;
+	color: #ccc;
+}
+
+#apiList {
+	margin-left: 3.5em;
+}
+#yourList {
+	margin-right: 3.5em;
+}
+
+.first-col, .third-col {
+	border-radius: 5px;
+	background-color: #48004a;
+	min-height: 400px;
+}
+
+.blocky {
+	background-color: pink;
+	margin-top: 10px;
+	color: #111;
+	box-shadow: 0 0 1em #004000;
+	cursor: pointer;
+}
+.blocky:hover {
+	background-color: #b53389;
+}
