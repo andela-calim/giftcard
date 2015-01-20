@@ -14,6 +14,7 @@
       <div id="navbar" class="navbar-collapse collapse" ng-show="tokenStatus">
         <span><a href="#/createProduct" class="btn btn-default btn-sm cButtons">Create Product</a></span>
         <span><a href="#/viewUsers" class="btn btn-default btn-sm cButtons">View Users</a></span>
+        <span><input type="text" class="searchBar" placeholder="Search Products" ng-model="query"></span>
         <a href="" class="btn btn-default btn-sm navbar-right" id="btn-logout" ng-click="logout()">Logout</a>
       </div><!--/.navbar-collapse -->
     </div>
@@ -27,7 +28,7 @@
   <div class="row">
     <div class="col-md-4 first-col items" id="apiList">
       <h2>Available Items</h2>
-      <div ng-repeat="item in items" class="col-xs-12 col-md-10 col-md-offset-1 blocky">
+      <div ng-repeat="item in items | filter:query" class="col-xs-12 col-md-10 col-md-offset-1 blocky">
         <div class="item" ng-click="pushToList(item, wishList)">
           <div><strong>Name</strong>: {{item.itemName}}</div>
           <div><strong>Category</strong>: {{item.itemCategory}}</div>
@@ -52,7 +53,7 @@
           <div><strong>Price</strong>: {{item.itemPrice}}</div>
         </div>
       </div>
-      <a href="" class="btn btn-default btn-sm aCenter" ng-click="saveWishList()" ng-show="wishList.length">Confirm</a>
+      <a href="" class="btn btn-default btn-sm aCenter confirmBtn" ng-click="saveWishList()" ng-show="wishList.length">Confirm</a>
       <p>{{statusReport}}</p>
     </div>
   </div>

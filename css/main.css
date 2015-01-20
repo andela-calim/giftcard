@@ -81,6 +81,11 @@ REGISTRATION AND LOGIN
 	color: peru;
 }
 
+.searchBar {
+	min-width: 50px;
+	width: 65%;
+}
+
 /************************
 PROFILE PAGE (Items)
 ************************/
@@ -126,8 +131,17 @@ section article, .aCenter{
 	color: #111;
 	box-shadow: 0 0 1em #004000;
 	cursor: pointer;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 .blocky:hover {
 	background-color: #b53389;
+}
+
+.confirmBtn {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #eee;
+	background-color: #00A550;
+	margin: 1em 5.7em;
+	width: 50%;
 }
